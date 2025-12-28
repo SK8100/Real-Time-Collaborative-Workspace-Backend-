@@ -1,5 +1,5 @@
 import { Worker } from "bullmq";
-import { redisConnection } from "../../config/redis";
+import { redisClient } from "../../config/redis";
 import { client } from "../../config/dbConnect";
 
 new Worker(
