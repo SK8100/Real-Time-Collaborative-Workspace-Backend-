@@ -14,6 +14,10 @@ import projectRoutes from "./modules/projects/project.routes";
 
 const app = express(); // ✅ CREATE APP FIRST
 
+app.get("/", (_req, res) => {
+  res.send("🚀 Backend is live!");
+});
+
 app.use((req, _res, next) => {
   logger.info({
     method: req.method,
