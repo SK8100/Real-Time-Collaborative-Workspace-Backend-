@@ -48,7 +48,7 @@ new Worker(
     }
   },
   {
-    connection: redisConnection,
+    connection: redisClient,
     concurrency: 5,
   }
 );
