@@ -2,7 +2,7 @@ import { Queue } from "bullmq";
 import { redisClient } from "../../config/redis";
 
 export const jobQueue = new Queue("jobs", {
-  connection: redisConnection,
+  connection: redisClient,
 
   defaultJobOptions: {
     attempts: 3,              // Retry failed jobs
