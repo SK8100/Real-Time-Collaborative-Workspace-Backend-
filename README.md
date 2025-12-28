@@ -4,6 +4,15 @@
 A production-ready backend service for a real-time collaborative workspace for developers.
 This system supports secure authentication, project and workspace management, real-time collaboration, and asynchronous job processing with a scalable, cloud-ready architecture.
 
+## Live Links
+Backend Base URL
+
+https://real-time-collaborative-workspace-backend-production.up.railway.app/
+
+API Documentation (Swagger)
+
+https://real-time-collaborative-workspace-backend-production.up.railway.app/api/docs
+
 ## Architecture Overview
 
 This backend is built using a modular, API-first architecture with asynchronous and real-time capabilities.
