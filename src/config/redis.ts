@@ -14,12 +14,13 @@
 
 import Redis from "ioredis";
 
-// Create Redis client using the environment variable
+if (!process.env.REDIS_URL) {
+  throw new Error("REDIS_URL environment variable is not defined");
+}
+
 export const redisClient = new Redis(process.env.REDIS_URL);
 
-// Log when connected
 redisClient.on("connect", () => console.log("Redis connected"));
-
-// Handle errors properly
 redisClient.on("error", (err) => console.error("Redis connection error:", err));
+
 
